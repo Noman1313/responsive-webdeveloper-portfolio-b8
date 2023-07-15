@@ -1,0 +1,231 @@
+/* common style */
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.section-title{
+    color: #181818;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.section-description{
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+}
+/* header related style */
+.header{
+    background-color: #FFF8F3;
+    background-image: url('../images/header_bg.png'),url("../images/developer.png");
+    background-repeat: no-repeat;
+    background-position: bottom right,top left;
+    background-size: 500px,70px;
+}
+
+.text-primary{
+    color: #FD6E0A;
+}
+.btn-primary{
+    background-color: #fd6e0a;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* nav related style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 200px;
+}
+.nav-title{
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: #474747;
+}
+.banner{
+    padding: 30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner .profile-pic{
+    width: 300px;
+}
+.banner-greeting{
+    font-size: 40px;
+    color: #474747;
+    margin-bottom: 2px;
+}
+.banner-title{
+    font-size: 80px;
+    font-weight: 700;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+.banner-contant{
+    max-width: 500px;
+    
+}
+.banner-description{
+    margin-top: 5px;
+}
+
+/* main section */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+main section{
+    margin-top: 130px;
+}
+/* about style */
+.about{
+    padding: 130px;
+    border-radius: 10px;
+    background: #FFF8F3;
+    margin: 130px 0;
+    /* border: 1px solid gray; */
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid gray; */
+}
+.about-info{
+    text-align: center;
+    margin: 20px;
+    /* border: 1px solid gray; */
+}
+/* skills related style */
+#what-i-do-description{
+    /* border: 1px solid gray; */
+    padding: 30px 150px;
+}
+.skills-container{
+    display: flex;
+    gap: 20px;
+}
+.skill{
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0 6px 50px 0px rgba(0, 0, 0, 0.06);
+    
+}
+.skill-description{
+    color: #757575;
+}
+.resume-colum-title{
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+}
+.resume-container{
+    display: flex;
+    gap: 50px;
+}
+.resume-item-title{
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.resume-item-institute{
+    margin-top: 0px;
+    margin-bottom: 20;
+}
+.resume-item-description, .resume-item-institute{
+    color: #757575;
+
+}
+.resume-container hr{
+    margin: 30px;
+}
+.download-cv{
+    text-align: center;
+    margin-top: 50px;
+}
+/* footer style */
+footer{
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    margin-top: 100px;
+    padding: 130px 200px;
+}
+.social-links a{
+    margin-right: 20px ;
+}
+
+.footer-column{
+    width: 50%;
+}
+.contact input[type="text"],input[type="email"], textarea{
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 25px;
+    color: #757575;
+    border-radius: 5px;
+    background: #FFF;
+    border: 0;
+    width: 100%;
+}
+
+/* responsive style */
+
+/* .hide{
+    display: none;
+} */
+/* mobile device */
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    nav,
+    nav > ul,
+    .banner,
+    .skills-container, 
+    .resume-container,
+    .about-info-container,
+    footer{
+        flex-direction: column;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    #what-i-do-description{
+        padding: 20px;
+    }
+    footer, .about, .banner{
+        padding: 10px;
+    }
+    .btn-primary{
+        margin: 10px 0;
+    } 
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"],input[type="email"], textarea{
+        width: 80%;
+    }
+}
